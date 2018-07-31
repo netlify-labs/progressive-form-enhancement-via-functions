@@ -1,3 +1,6 @@
 [build]
+  command = "npm run build"
   # This is the directory is publishing to netlify's CDN
   publish = "src"
+  # where functions build to
+  functions = "functions-build"
