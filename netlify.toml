@@ -1,0 +1,3 @@
+[build]
+  # This is the directory is publishing to netlify's CDN
+  publish = "src"
