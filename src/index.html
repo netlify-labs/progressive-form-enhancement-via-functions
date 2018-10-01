@@ -21,6 +21,7 @@
         padding-top: 0px;
         padding-bottom: 40px;
         background-color: #f5f5f5;
+        flex-direction: column;
       }
       .form-signin {
         width: 100%;
@@ -58,8 +59,8 @@
   </head>
 
   <body class="text-center">
-    <div id="message"></div>
     <form id="newsletter" class="form-signin" method="post" action="/.netlify/functions/form-handler">
+      <div id="message"></div>
       <h1 class="h3 mb-3 font-weight-normal">Sign up for newsletter</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" name='email' class="form-control" placeholder="Email address" required autofocus>
