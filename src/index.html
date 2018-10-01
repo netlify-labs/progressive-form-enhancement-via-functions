@@ -64,6 +64,7 @@
       <input type="email" id="inputEmail" name='email' class="form-control" placeholder="Email address" required autofocus>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up for newsletter</button>
     </form>
+    <div id="message"></div>
   </body>
 
   <script>
@@ -86,6 +87,8 @@
           return response.json()
         }).then(function(data) {
           console.log('data from function', data)
+          var messageDiv = document.getElementById('message')
+          messageDiv.innerText = 'Email added via AJAX! Turn on JS to try the progressively enhanced fallback'
         })
     }
   </script>
